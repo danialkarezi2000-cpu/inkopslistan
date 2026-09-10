@@ -10,4 +10,27 @@ while (true)
 
     //Sparar användarens inmatning som text
     string input = Console.ReadLine()!;
+    //Kontrollerar om användaren skrev ett nummer
+    if (int.TryParse(input, out int nummer))
+    {
+        Console.WriteLine("Du skrev ett nummer.");
+    }
+    else
+    {
+        //Användaren skrev ett varunamn
+        Console.Write("Skriv priset:");
+        string priceInput = Console.ReadLine()!;
+        if (int.TryParse(priceInput, out int price))
+        {
+            names.Add(input);
+            prices.Add(price);
+
+            Console.WriteLine("Varan har lagts till.");
+
+        }
+        else
+        {
+            Console.WriteLine("Priset måste vara ett heltal.");
+        }
+    }
 }
