@@ -22,7 +22,7 @@ while (true)
     }
     Console.WriteLine($"Totalt: {total} kr");
 
-    //Frågan användaren efter ett varunamn eller ett nummer
+    //Frågar användaren efter ett varunamn eller ett nummer
     Console.WriteLine("Skriv en vara eller ett nummer.");
 
     //Sparar användarens inmatning som text
