@@ -1,8 +1,8 @@
 //Lista som sparar namnet på varje vara
-List names = new List();
+List<string> names = new List<string>();
 
-//Lisa som sparar priset på varje vara
-List prices = new List();
+//Lista som sparar priset på varje vara
+List<int> prices = new List<int>();
 
 while (true)
 {
@@ -22,7 +22,7 @@ while (true)
     }
     Console.WriteLine($"Totalt: {total} kr");
 
-    //Frågan till användaren kommer senare
+    //Frågan användaren efter ett varunamn eller ett nummer
     Console.WriteLine("Skriv en vara eller ett nummer.");
 
     //Sparar användarens inmatning som text
