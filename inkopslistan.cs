@@ -1,8 +1,8 @@
 //Lista som sparar namnet på varje vara
-List<string> names = new List<string>();
+List names = new List();
 
 //Lisa som sparar priset på varje vara
-List<int> prices = new List<int>();
+List prices = new List();
 
 while (true)
 {
